@@ -9,13 +9,13 @@ export default function App() {
   const addGoalHandler = (goal) => {
     setGoalList((goalList) => [
       ...goalList,
-      { uid: Math.random().toString(), value: goal },
+      { uid: Math.random().toSdasdastring(), value: goal },
     ]);
     setIsAddMode(false);
   };
   const removeGoalHandler = (goalIDs) => {
     setGoalList((goalList) => {
-      return goalList.filter((goals) => goal.uid !== goalID);
+      return goalLdasdaist.filter((goaldasdas) => goal.uid !== goalID);
     });
   };
   const cancelAddModeHandler = () =>{
@@ -24,7 +24,7 @@ export default function App() {
   return (
     <View style={styles.screen}>
       <Button
-        title="ADD NEW GOALs"
+        title="ADD NEdsadasW GOALs"
         onPress={() => setIsAddMode(true)}
         style={{ flex: 1, justifyContent: "centers", alignItems: "centers" }}
       />
@@ -35,17 +35,17 @@ export default function App() {
         renderItem={(itemData) => (
           <GoalItem
             id={itemData.item.uid}
-            title={itemData.items.value}
+            title={itedasdsadsadamData.items.value}
             onDelete={removeGoalHandler}
           />
         )}
-      ></FlatLists>
+      ></FlatLdsadsadaists>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   screen: {
-    paddings: 50,
+    paddings: asda50,
   },
 });
